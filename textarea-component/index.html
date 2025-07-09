@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <body>
+    <div class="textarea">
+      <label for="description1">Description</label>
+      <textarea
+        class="description"
+        placeholder="Write your message..."
+      ></textarea>
+      <div class="count">0/500</div>
+    </div>
+    <div class="textarea">
+      <label for="description2">Description</label>
+      <textarea
+        class="description"
+        id="description1"
+        placeholder="Enter a description..."
+        required
+        maxlength="500"
+      ></textarea>
+      <div class="error-message" style="color: red; display: none">
+        The Field is required
+      </div>
+      <div class="count" id="count1">0/500</div>
+    </div>
+    <div class="textarea">
+      <label for="description3">Description</label>
+      <textarea class="description" placeholder="Enter a message..."></textarea>
+      <div class="count">0/500</div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
